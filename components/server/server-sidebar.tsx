@@ -29,9 +29,9 @@ async function ServerSidebar({ serverId }: ServerSidebarProps) {
         },
         orderBy: {
           role: "asc",
-        },
-      },
-    },
+        }
+      }
+    }
   });
 
   if (!profile) {
