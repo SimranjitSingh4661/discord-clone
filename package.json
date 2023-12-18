@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "npx prisma generate && npx prisma db push && next dev",
     "prisma": "npx prisma studio",
+    "prisma-gen": "npx prisma generate",
+    "prisma-db-push": "npx prisma db push",
+    "prisma-reset": "npx primsa migrate reset",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

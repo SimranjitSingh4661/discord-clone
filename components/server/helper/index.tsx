@@ -60,7 +60,7 @@ export const ListItems = [
     title: "Invite People",
     hasSeparator: false,
     icon: () => <UserPlus className="h-4 w-4 ml-auto" />,
-    role: [ADMIN, GUEST],
+    role: [ADMIN, GUEST, MODERATOR],
   },
   {
     key: "Create_Channel",
