@@ -34,6 +34,13 @@ function ServerHeader({ server, role }: ServerHeaderProps) {
     switch (item) {
       case MenuItemPropsEnum.Invite_People:
         onOpen("invite", { server });
+        return;
+      case MenuItemPropsEnum.Edit_Server_Profile:
+        onOpen("editServer", { server });
+        return;
+      case MenuItemPropsEnum.Manage_Members:
+        onOpen("members", { server });
+        return;
     }
   };
 

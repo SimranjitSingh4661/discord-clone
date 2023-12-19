@@ -11,6 +11,7 @@ import {
   Check,
   Pencil,
   DoorOpen,
+  UsersIcon,
 } from "lucide-react";
 import { Checkbox } from "@/components/ui/checkbox";
 
@@ -23,6 +24,7 @@ export enum MenuItemPropsEnum {
   Create_Category = "Create_Category",
   Create_Event = "Create_Event",
   App_Directory = "App_Directory",
+  Manage_Members = "Manage_Members",
   Show_All_Channels = "Show_All_Channels",
   Notification_Settings = "Notification_Settings",
   Privacy_Settings = "Privacy_Settings",
@@ -61,6 +63,14 @@ export const ListItems = [
     hasSeparator: false,
     icon: () => <UserPlus className="h-4 w-4 ml-auto" />,
     role: [ADMIN, GUEST, MODERATOR],
+  },
+  {
+    key: "Manage_Members",
+    styles: "px-3 py-2 text-sm cursor-pointer",
+    title: "Manage Members",
+    hasSeparator: false,
+    icon: () => <UsersIcon className="h-4 w-4 ml-auto" />,
+    role: [ADMIN],
   },
   {
     key: "Create_Channel",
