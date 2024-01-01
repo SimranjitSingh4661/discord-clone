@@ -1,2 +1,14 @@
 export { default as DiscordIcon } from "./DiscordIcon";
 export { default as ExploreIcon } from "./ExploreIcon";
+export { default as LockIcon } from "./LockIcon";
+export { default as SettingIcon } from "./SettingIcon";
+export { default as HeadsetIcon } from "./HeadsetIcon";
+export { default as MicIcon } from "./MicIcon";
+export { default as LineIcon } from "./LineIcon";
+export { default as EditIcon } from "./EditIcon";
+export { default as DropDownIcon } from "./DropDownIcon";
+export { default as PlusIcon } from "./PlusIcon";
+export { default as AddMemberIcon } from "./AddMemberIcon";
+export { default as SpeackerSoundIcon } from "./SpeackerSoundIcon";
+export { default as ChannelHashIcon } from "./ChannelHashIcon";
+export { default as TrashIcon } from "./TrashIcon";
