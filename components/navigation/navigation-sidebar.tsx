@@ -38,6 +38,7 @@ async function NavigationSidebar() {
         {servers.map((servers) => (
           <NavigationItem
             id={servers.id}
+            key={servers.id}
             name={servers.name}
             imageUrl={servers.imageUrl}
           />
@@ -45,16 +46,16 @@ async function NavigationSidebar() {
         <NavigationAction type="bottom" />
       </div>
       {/* </ScrollArea> */}
-      <div className="pb-3 mt-auto flex items-center flex-col gap-y-4">
+      <div className="mt-auto flex items-center flex-col gap-y-4">
         <ModeToggle />
-        <UserButton
+        {/* <UserButton
           afterSignOutUrl="/"
           appearance={{
             elements: {
               avatarBox: "h-[48px] w-[48px]",
             },
           }}
-        />
+        /> */}
       </div>
     </div>
   );

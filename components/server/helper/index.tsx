@@ -8,7 +8,6 @@ import {
   CalendarPlus,
   Bell,
   LucideShieldCheck,
-  Check,
   Pencil,
   DoorOpen,
   UsersIcon,
@@ -31,6 +30,7 @@ export enum MenuItemPropsEnum {
   Edit_Server_Profile = "Edit_Server_Profile",
   Hide_Muted_Channels = "Hide_Muted_Channels",
   Leave_Server = "Leave_Server",
+  Delete_Server = "Delete_Server",
 }
 export type MenuItemProps =
   | "Server_Boost"
@@ -44,7 +44,8 @@ export type MenuItemProps =
   | "Privacy_Settings"
   | "Edit_Server_Profile"
   | "Hide_Muted_Channels"
-  | "Leave_Server";
+  | "Leave_Server"
+  | "Delete_Server";
 
 export const ListItems = [
   {
@@ -152,5 +153,14 @@ export const ListItems = [
     hasSeparator: false,
     icon: () => <DoorOpen className="h-4 w-4 ml-auto" />,
     role: [GUEST, MODERATOR],
+  },
+  {
+    hasTopSeparator: true,
+    key: "Delete_Server",
+    styles: "text-red-500 px-3 py-2 text-sm cursor-pointer",
+    title: "Delete Server",
+    hasSeparator: false,
+    icon: () => <DoorOpen className="h-4 w-4 ml-auto" />,
+    role: [ADMIN],
   },
 ];

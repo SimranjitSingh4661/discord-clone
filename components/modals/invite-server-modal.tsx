@@ -48,7 +48,7 @@ export const InviteServerModal = () => {
               <span className="font-bold whitespace-nowrap">
                 {" " + server?.name}
               </span>{" "}
-              's server
+              {"'s server"}
             </p>
           </DialogTitle>
           <DialogDescription className="text-left text-base text-zinc-500">
