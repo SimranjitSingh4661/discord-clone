@@ -12,3 +12,7 @@ export { default as AddMemberIcon } from "./AddMemberIcon";
 export { default as SpeackerSoundIcon } from "./SpeackerSoundIcon";
 export { default as ChannelHashIcon } from "./ChannelHashIcon";
 export { default as TrashIcon } from "./TrashIcon";
+export { default as GiftIcon } from "./GiftIcon";
+export { default as GifIcon } from "./GifIcon";
+export { default as StickerIcon } from "./StickerIcon";
+export { default as CirclePlusIcon } from "./CirclePlusIcon";
